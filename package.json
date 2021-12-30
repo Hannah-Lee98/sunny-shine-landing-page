@@ -4,13 +4,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "lint": "next lint",
     "heroku-postbuild": "npm run build"
   },
   "engines": {
     "npm": "6.x",
-    "node": "14.x"
+    "node": "14.x",
+    "yarn": "1.x"
   },
   "dependencies": {
     "i18n": "^0.13.3",
