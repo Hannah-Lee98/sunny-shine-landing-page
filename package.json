@@ -8,8 +8,8 @@
     "lint": "next lint"
   },
   "engines": {
-    "npm": ">=6.4.1",
-    "node": ">=10.13.0",
+    "npm": "6.x",
+    "node": "10.x",
     "yarn": "1.x"
   },
   "dependencies": {
