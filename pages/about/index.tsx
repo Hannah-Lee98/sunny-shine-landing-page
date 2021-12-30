@@ -6,6 +6,7 @@ import {
   EmptyPageContainer,
   PageContainer,
 } from '../../components/page-container-styled';
+import Footer from '../../components/footer-section';
 
 const About: NextPage = () => {
   return (
@@ -14,6 +15,7 @@ const About: NextPage = () => {
         <Nav />
         <HeadPage title={'About'} />
         <div className={'content'}>About</div>
+        <Footer />
       </EmptyPageContainer>
     </PageContainer>
   );
