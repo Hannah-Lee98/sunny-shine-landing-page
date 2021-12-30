@@ -9,8 +9,7 @@
   },
   "engines": {
     "npm": "6.x",
-    "node": "14.x",
-    "yarn": "1.x"
+    "node": "14.x"
   },
   "dependencies": {
     "i18n": "^0.13.3",
