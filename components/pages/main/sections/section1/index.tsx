@@ -12,7 +12,12 @@ const Section1 = () => {
       <div className={'content-section'}>
         <h1 className={'content-section__title'}>We are creatives</h1>
         <div className={'arrow-icon'}>
-          <svg width="36" height="114" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            width="36"
+            height="114"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 36 114"
+          >
             <g
               stroke="#FFF"
               strokeWidth="6"

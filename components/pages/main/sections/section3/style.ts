@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { screenSize } from '../../../../../type/general';
 
 export const Section3Wrapper = styled.section`
   background: #f3f3f3;
@@ -19,6 +20,13 @@ export const Section3Wrapper = styled.section`
     display: flex;
     justify-content: center;
     gap: 2rem;
+  }
+  @media only screen and ${screenSize.medium} {
+    .body-section {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 `;
 

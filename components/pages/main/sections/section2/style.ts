@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { screenSize } from '../../../../../type/general';
 
 export const Section2Wrapper = styled.section`
   display: grid;
@@ -14,6 +15,9 @@ export const Section2Wrapper = styled.section`
       height: auto;
     }
   }
+  @media only screen and ${screenSize.medium} {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const SectionItemHasContentOnlyWrapper = styled.section`
@@ -22,12 +26,14 @@ export const SectionItemHasContentOnlyWrapper = styled.section`
   align-items: center;
   flex: 1;
   background: rgb(254 251 247);
+  aspect-ratio: 1.2;
   .section-container {
-    width: 450px;
+    margin: 3rem;
+    width: min(450px, 75%);
     font-family: Fraunces;
     color: rgb(41 48 61);
     > h2 {
-      font-size: 50px;
+      font-size: clamp(20px, 3vw, 50px);
       font-weight: 700;
       font-family: inherit;
       color: inherit;
@@ -38,7 +44,7 @@ export const SectionItemHasContentOnlyWrapper = styled.section`
       color: rgb(160 159 164);
     }
     > a {
-      font-size: 30px;
+      font-size: clamp(16px, 3vw, 35px);
       font-family: inherit;
       color: inherit;
       font-weight: 700;
@@ -57,12 +63,18 @@ export const SectionItemHasContentOnlyWrapper = styled.section`
 export const SectionItemHasContentAndPictureWrapper = styled.section`
   display: flex;
   position: relative;
+  aspect-ratio: 1.2;
+  flex: 1;
+  > img {
+    width: 100%;
+    height: auto;
+  }
   .section-container {
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    width: 300px;
+    width: min(300px, 75%);
     font-family: Fraunces;
     > h2 {
       font-size: 30px;

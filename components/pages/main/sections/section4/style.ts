@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { screenSize } from '../../../../../type/general';
 
 export const Section4Wrapper = styled.section`
   display: grid;
@@ -10,5 +11,11 @@ export const Section4Wrapper = styled.section`
   img {
     width: 100%;
     height: auto;
+  }
+  @media only screen and ${screenSize.medium} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media only screen and ${screenSize.small} {
+    grid-template-columns: 1fr;
   }
 `;
