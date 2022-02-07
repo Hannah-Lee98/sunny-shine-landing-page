@@ -27,13 +27,14 @@ export const SectionItemHasContentOnlyWrapper = styled.section`
   flex: 1;
   background: rgb(254 251 247);
   aspect-ratio: 1.2;
+  --expect-font-size: 3vw;
   .section-container {
     margin: 3rem;
     width: min(450px, 75%);
     font-family: Fraunces;
     color: rgb(41 48 61);
     > h2 {
-      font-size: clamp(20px, 3vw, 50px);
+      font-size: clamp(20px, var(--expect-font-size), 50px);
       font-weight: 700;
       font-family: inherit;
       color: inherit;
@@ -58,11 +59,15 @@ export const SectionItemHasContentOnlyWrapper = styled.section`
       }
     }
   }
+  @media only screen and ${screenSize.medium} {
+    --expect-font-size: 5vw;
+  }
 `;
 
 export const SectionItemHasContentAndPictureWrapper = styled.section`
   display: flex;
   position: relative;
+  width: 100%;
   aspect-ratio: 1.2;
   flex: 1;
   > img {

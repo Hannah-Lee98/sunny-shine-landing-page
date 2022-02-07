@@ -60,7 +60,6 @@ const Section2 = () => {
           imgURL={'/images/desktop/image-transform.jpg'}
           alt={'transform'}
         />
-        {/*<img src={'/images/desktop/image-transform.jpg'}  />*/}
       </div>
       <div className={'grid-item grid-item-3'}>
         <SectionItemHasContentAndPicture

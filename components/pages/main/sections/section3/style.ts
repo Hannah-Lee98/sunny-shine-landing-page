@@ -5,6 +5,7 @@ export const Section3Wrapper = styled.section`
   background: #f3f3f3;
   .section-container {
     padding: 4rem 0;
+    margin: 0 4rem;
   }
   .head-section {
     font-family: Fraunces;
